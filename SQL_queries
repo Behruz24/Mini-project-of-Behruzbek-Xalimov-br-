@@ -1,0 +1,48 @@
+CREATE TABLE Timetable (
+    course_id SERIAL PRIMARY KEY,
+    course_name VARCHAR(255),
+    instructor VARCHAR(255),
+    day VARCHAR(50),
+    time VARCHAR(50),
+    room VARCHAR(50),
+    level_course VARCHAR(50),
+    campus VARCHAR(255)
+    level INT;
+);
+
+
+--1 semester
+INSERT INTO Timetable (course_name, instructor, day, time, room, level_course, campus, level) VALUES
+('Computer Programming I', 'Kakde, Yog', 'Wednesday', '09:30 AM - 12:20 PM', '114', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 1),
+('College Algebra', 'Pirnapasov', 'Wednesday', '06:30 PM - 09:20 PM', '413', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 1),
+('Global Cornerstone Seminar', 'Nazarov, R', 'Wednesday', '12:30 PM - 03:20 PM', '411', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 1),
+('Webster 101', 'Khegay, Ev', 'Monday', '05:30 PM - 07:20 PM', '411', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 1),
+('Survey of Economics', 'Muminov, T', 'Friday', '03:30 PM - 06:20 PM', '110', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 1);
+
+--2 Semester
+INSERT INTO Timetable (course_name, instructor, day, time, room, level_course, campus, level) VALUES
+('Mathematics for Computer', 'Nacional', 'Tuesday', '12:30 PM - 03:20 PM', '413', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 2),
+('Network Principles', 'Goje, Niti', 'Wednesday', '03:30 PM - 06:20 PM', '304', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 2),
+('Descriptive Statistics', 'Klieb, Lesl', 'Thursday', '12:30 PM - 03:20 PM', 'Online', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 2),
+('Introduction to Political Theory', 'Paiva, Ale', 'Thursday', '03:30 PM - 06:20 PM', '405', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 2),
+('Public Speaking', 'Khaydarov', 'Tuesday', '03:30 PM - 06:20 PM', '413', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 2),
+('Introduction to Business', 'Isroilov', 'Wednesday', '06:30 PM - 09:20 PM', '101', 'Freshman', 'Webster Univ Tashkent, Uzbekistan', 2);
+
+
+-- Semester 3
+INSERT INTO Timetable (course_name, instructor, day, time, room, level_course, campus, level) VALUES
+('Computer Programming II', 'Pimazarov', 'Friday', '04:30 PM - 06:50 PM', '115', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 3),
+('Computer Languages', 'Bekov, San', 'Wednesday', '04:30 PM - 06:50 PM', '114', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 3),
+('Operating Systems', 'Boeva, Sok', 'Monday', '04:30 PM - 06:50 PM', '304', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 3),
+('Global Social Problems', 'Mirakilov', 'Monday', '07:00 PM - 09:20 PM', 'Online', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 3),
+('Science in the News', 'Attanayake', 'Thursday', '04:30 PM - 06:50 PM', 'Online', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 3),
+('Culture and Communication', 'Inprom, Ch', 'Tuesday', '04:30 PM - 06:50 PM', 'Online', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 3);
+
+-- Semester 4
+INSERT INTO Timetable (course_name, instructor, day, time, room, level_course, campus, level) VALUES
+('Social Engineering and Systems Analysis', 'Now know yet', 'Wednesday', '11:30 AM', 'Room 101', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 4),
+('Systems Analysis and Design', 'Now know yet', 'Tuesday', '2:00 PM', 'Room 102', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 4),
+('Introduction to WebNet+', 'Now know yet', 'Thursday', '4:30 PM', 'Room 103', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 4),
+('Discrete Mathematics', 'Now know yet', 'Friday', '6:00 PM', 'Room 104', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 4),
+('Writing in the Workplace', 'Now know yet', 'Monday', '4:20 PM', 'Room 105', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 4),
+('Computer Architecture', 'Now know yet', 'Friday', '1:50 PM', 'Room 106', 'Sophomore', 'Webster Univ Tashkent, Uzbekistan', 4);

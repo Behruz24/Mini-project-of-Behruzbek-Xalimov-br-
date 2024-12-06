@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Timetable</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0056b3, #003f80);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid #e0e0e0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        label {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+        select {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #1f1c2c;
+            color: #ffffff;
+            width: 60%;
+        }
+
+        button {
+            background: linear-gradient(90deg, #0056b3, #003f80);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #003f80, #0056b3);
+            transform: scale(1.1);
+        }
+
+        .extra-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .extra-buttons button {
+            font-size: 0.9rem;
+            padding: 0.7rem 1.5rem;
+            background: #444;
+            color: #fff;
+        }
+
+        .extra-buttons button:hover {
+            background: #555;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .contact-info {
+            margin-top: 1rem;
+        }
+
+        footer .contact-info p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini project of Behruzbek Xalimov<br/>Webster University in Tashkent Timetable Portal</h1>
+    </header>
+
+    <main>
+        <h1>Hello Behruzbek Xalimov!<br/>Select Your Course Level</h1>
+
+        <form action="/timetable" method="GET">
+            <label for="level">Choose your Semester:</label>
+            <select name="level" id="level" required>
+                <option value="" disabled selected>Select Semester</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+            </select>
+            <button type="submit">View Timetable</button>
+        </form>
+
+        <div class="extra-buttons">
+            <button onclick="alert('Coming Soon: Add Course Materials!')">Add Course Materials</button>
+            <button onclick="alert('Coming Soon: Download Timetable!')">Download Timetable</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 University Timetable | <a href="https://example.com">Contact Us</a></p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:halimovbehruz142@gmail.com">halimovbehruz142@gmail.com</a> /
+            <a href="mailto:behruzbekxalimov@webster.edu">behruzbekxalimov@webster.edu</a></p>
+            <p>Phone: +998907673377 / +375259299000</p>
+        </div>
+    </footer>
+</body>
+</html>
